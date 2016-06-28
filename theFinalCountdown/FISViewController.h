@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface FISViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UILabel *countdownDisplayLabel;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UIButton *pauseButton;
+@property (weak, nonatomic) IBOutlet UIView *buttonViewHelper;
+@property (nonatomic)NSUInteger counter;
+@property (strong, nonatomic)NSTimer *timer;
+@property (nonatomic)BOOL isPaused;
 
 @end
